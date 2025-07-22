@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bashmahn‑Style Terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0d0d0d;
+      margin: 0;
+      font-family: monospace;
+      color: #33ff33;
+    }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background: #111;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    }
+    .sidebar a {
+      display: block;
+      color: #33ff33;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .terminal-line {
+      margin: 5px 0;
+    }
+    .prompt {
+      color: #00ff00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>menu</h2>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="main">
+    <h1>visitor@bashmahn:~$</h1>
+    <div class="terminal-line"><span class="prompt">$</span> Welcome to my site!</div>
+    <div class="terminal-line"><span class="prompt">$</span> I'm building cool stuff...</div>
+    <hr>
+    <h2 id="about">About Me</h2>
+    <p>Hi, I'm Bashmahn‑style developer 🔧. I love code and creating terminal-style websites.</p>
+    <h2 id="projects">Projects</h2>
+    <p>– Project A: <a href="#">Link</a><br/>
+       – Project B: <a href="#">Link</a></p>
+    <h2 id="contact">Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  </div>
+
+</body>
+</html>
